@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>index</title>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>Post Data to DB</h1>
+    <form class="form">
+        <div>
+            <label for="firstName">first name</label>
+            <input name="firstName" type="text" placeholder="enter first name" required>
+        </div>
+        <br>
+        <div>
+            <label for="Surname">last name</label>  
+            <input type="text" id="Surname" name="Surname" placeholder="enter surname" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone</label>  
+            <input type="tel" id="phone" name="phone" placeholder="(000)-000-000"  required>
+        </div>
+        <br>
+        <div>
+            <label for="email">email</label>  
+            <input type="email" id="email" name="email" placeholder="enter email" required>
+        </div>
+        <br>
+        <div>
+            <label for="title">Title:
+                <br>
+                <label for="Mr">Mr.</label>
+                <input type="radio" id="Mr" name="title" value="Mr." required>
+                <br>
+                <label for="Mrs">Mrs.</label>
+                <input type="radio" id="Mrs" name="title" value="Mrs." required>
+                <br>
+                <label for="Ms">Ms</label>
+                <input type="radio" id="Ms" name="title" value="Ms" required>
+                <br>
+                <label for="Miss">Miss</label>
+                <input type="radio" id="Miss" name="title" value="Miss" required>
+                <br>
+                <label for="Mx">Mx</label>
+                <input type="radio" id="Mx" name="title" value="Mx" required>
+                <br>
+                <label for="Dr">Dr</label>
+                <input type="radio" id="Dr" name="title" value="Dr" required>
+                <br>
+                <label for="Other">Other</label>
+                <input type="radio" id="Other" name="title" value="Other" required>
+            </label>
+            
+        </div> 
+        <br> 
+        <div>
+            <label for="homeAddress">Home Address</label>
+            <br>
+            <textarea required id="homeAddress" name="homeAddress" rows="4" cols="50" placeholder="Line1&#x0a;Line2&#x0a;Town&#x0a;County&#x0a;City&#x0a;Eircode"></textarea>
+        </div>
+        <div>
+            <label for="shippingAddress">Shipping Address</label>
+            <br>
+            <textarea required id="shippingAddress" name="shippingAddress" rows="4" cols="50" placeholder="Line1&#x0a;Line2&#x0a;Town&#x0a;County&#x0a;City&#x0a;Eircode"></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div> 
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h1>Remove from DB</h1>
+    <form class="deleteInfo">
+        <div>
+            <label for="deleteByFirstName">enter first name you want to delete from database</label>
+            <input type="text" name="deleteByFirstName" id="deleteByFirstName" placeholder="enter name to delete">
+        </div>
+    </form>
+    <!-- <h3>click to go to update page</h3>
+    <a class="link"href="update.html"aria-current="page">UPDATE</a> -->
+    <div class="vl"></div>
+
+    <div class="updatePage">
+        <h1>Update Data to DB</h1>
+        <form class="UpdateInfo">
+            <div>
+                <label for="UpdateByID">enter ID you want to update from database</label>
+                <input type="text" name="UpdateByID" id="UpdateByID" placeholder="enter ID to update">
+            </div>
+        </form>
+        <br>
+        <form class="formUpdate">
+            <div>
+                <label for="firstName">first name</label>
+                <input name="firstName" type="text" placeholder="enter first name">
+            </div>
+            <br>
+            <div>
+                <label for="Surname">last name</label>  
+                <input type="text" id="Surname" name="Surname" placeholder="enter surname">
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone</label>  
+                <input type="tel" id="phone" name="phone" placeholder="(000)-000-000">
+            </div>
+            <br>
+            <div>
+                <label for="email">email</label>  
+                <input type="email" id="email" name="email" placeholder="enter email">
+            </div>
+            <br>
+            <div>
+                <label for="title">Title:
+                    <br>
+                    <label for="Mr">Mr.</label>
+                    <input type="radio" id="Mr" name="title" value="Mr.">
+                    <br>
+                    <label for="Mrs">Mrs.</label>
+                    <input type="radio" id="Mrs" name="title" value="Mrs.">
+                    <br>
+                    <label for="Ms">Ms</label>
+                    <input type="radio" id="Ms" name="title" value="Ms">
+                    <br>
+                    <label for="Miss">Miss</label>
+                    <input type="radio" id="Miss" name="title" value="Miss">
+                    <br>
+                    <label for="Mx">Mx</label>
+                    <input type="radio" id="Mx" name="title" value="Mx">
+                    <br>
+                    <label for="Dr">Dr</label>
+                    <input type="radio" id="Dr" name="title" value="Dr">
+                    <br>
+                    <label for="Other">Other</label>
+                    <input type="radio" id="Other" name="title" value="Other">
+                </label>
+            </div> 
+            <br> 
+            <div>
+                <label for="homeAddress">Home Address</label>
+                <br>
+                <textarea id="homeAddress" name="homeAddress" rows="4" cols="50"placeholder="Line1&#x0a;Line2&#x0a;Town&#x0a;County&#x0a;City&#x0a;Eircode"></textarea>
+            </div>
+            <div>
+                <label for="shippingAddress">Shipping Address</label>
+                <br>
+                <textarea id="shippingAddress" name="shippingAddress" rows="4" cols="50" placeholder="Line1&#x0a;Line2&#x0a;Town&#x0a;County&#x0a;City&#x0a;Eircode"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Update</button>
+            </div> 
+        </form>
+    </div>
+    <br>
+    <hr>
+    <button onclick="getData()">Retrieve Info</button>
+    <h1>list of data from DB</h1>
+    <ul>
+    </ul>
+    
+
+</body>
+
+    <script>
+    
+        //turns my form answers into an object then info json to be sent to api
+        const form = document.querySelector('.form');
+        form.addEventListener('submit' , event => {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData)
+            
+            fetch("http://localhost:3000/createUser", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data)
+            }).then(res => res.json())
+              .then(data => console.log("Success:" ,data))
+              .catch(error => console.log(error))
+            console.log(formData.get('title'));
+        });
+
+
+        // //gets data from the DB and shows on html page
+        const listEl = document.querySelector('ul');
+        function getData(){
+            fetch('http://localhost:3000/user/', {
+                method: "GET"
+            })
+            .then(res => res.json())
+            .then(data => {
+                data.forEach(post => {
+                    listEl.insertAdjacentHTML('beforeend',
+                    `<ul>
+                        <br>
+                        ID: ${post._id}
+                        <br>
+                        ${post.title} ${post.firstName} ${post.Surname} 
+                        <br>
+                        mobile: ${post.phone} 
+                        <br>
+                        email: ${post.email} 
+                        <br>
+                        home Address: ${post.homeAddress}
+                        <br>
+                        Shipping Address: ${post.shippingAddress}
+                    
+                    </ul>`)
+                    // console.log(post);
+                });
+            });
+        }
+
+        
+        //get data from database
+        // fetch('http://localhost:3000/user/')
+        // .then(result => {
+        //     return result.json();
+        //     // console.log(result);
+        // })
+        // .then(data => {
+        //     console.log(data);
+        // })
+
+
+
+        // //delete data when user inputs the first name
+        const delForm = document.querySelector('.deleteInfo');
+        delForm.addEventListener('submit' , event => {
+            event.preventDefault();
+
+            console.log(document.getElementById("deleteByFirstName").value);
+            fetch("http://localhost:3000/deleteUser/" + document.getElementById("deleteByFirstName").value, {
+                method: "Delete"
+            }).then(res => res.json())
+              .then(data => console.log("Successful deleted:" ,data))
+              .catch(error => console.log(error))
+            // console.log(formData.get('title'));
+        });
+
+
+        //update profile by ID 
+        const formUpdate = document.querySelector('.formUpdate');
+        formUpdate.addEventListener('submit' , event => {
+            event.preventDefault();
+            // console.log(document.getElementById("UpdateByID").value)
+            const formData = new FormData(formUpdate);
+            const data = Object.fromEntries(formData)
+            
+            fetch("http://localhost:3000/user/" + document.getElementById("UpdateByID").value, {
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data)
+            }).then(res => res.json())
+              .then(data => console.log("UPDATED:" ,data))
+              .catch(error => console.log(error))
+            // console.log(formData.get('title'));
+        });
+    </script>
+</html>
